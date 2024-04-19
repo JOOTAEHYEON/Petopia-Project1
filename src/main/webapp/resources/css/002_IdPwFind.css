@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.topm_idpw {
+	margin: 200px 0px 170px 0px;
+	width:100%
+}
+
+
+.button_idpw {
+	margin-top:0px;
+	width: 600px;
+	height: 50px;
+	background-color: #FFCD00;
+	color: white;
+	border: none;
+	text-align:center; 
+	font-size:25px; 
+	font-weight:bold;
+	
+}
+
+button_idpw:hover{
+	font-weight:bold;
+	cursor:pointer;
+}
+
+
+.text_IdPw {
+	width: 600px;
+	height: 50px;
+	margin: 10px 0px 5px 0px;
+	border: 1px solid;
+	border-color: rgba(200, 200, 200, 0.7);
+}
+
+.textalign__IdPw {
+	text-align: center;
+}
+
+
+/* 아이디비밀번호 찾기 :클릭했을 때 변화  */
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+    color: white; /* 하얀색 글자 색상 */
+    font-weight: bold; /* 약간 두꺼운 글자 굵기 */
+    background-color: black; /* 검정색 배경 색상 */
+}
+
+/* 아이디비밀번호 찾기 :클릭하지 않았을 때   */
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: black;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-align:center;
+   
+}
+
+
+/* hover 효과 */
+.nav-link:hover {
+    color: #000; /* hover 시 글자 색상 */
+    font-weight: bold; /* hover 시 글자 굵기 */
+    cursor: pointer; /* 포인터 모양 */
+}
+
+
+
+.tap_idpw{
+	width:300px;
+	height:50px;
+	
+}
+
+
+input::placeholder {
+	color: rgba(200, 200, 200, 0.7);
+	font-size: 12px;
+}
+
+
+/* 안쓰는 것!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

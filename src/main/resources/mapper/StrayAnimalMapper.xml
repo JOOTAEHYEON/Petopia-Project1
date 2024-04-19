@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵필될 DAO 인터페이스의 Full name을 줌. (mapper interface) -->
+
+<!-- StrayAnimalMapper.xml -->
+
+<mapper namespace="com.spring.main.service.dao.StrayAnimalDAO">
+  
+
+    <!-- Stray_Animals 테이블과 Stray_Animals2 테이블을 조인하여 정보를 조회하는 쿼리 -->
+   <select id="getAllSA" resultType="StrayAnimalVO">
+    SELECT sa.asoo, sa.aname, sa.acenter, sa.aenter, sa.acate, sa.akind, sa.agender, sa.aage,
+           sa.aweight, sa.astatus1, sa.astatus2, sa.aURL, sa.aintroduce, sa2.picurl
+    FROM Stray_Animals sa
+    JOIN Stray_Animals2 sa2 ON sa.asoo = sa2.asoo  
+</select>
+
+
+
+<select id="getStrayAnimals" resultType="StrayAnimalVO">
+    SELECT sa.asoo, sa.aname, sa.acenter, sa.aenter, sa.acate, sa.akind, sa.agender, sa.aage,
+           sa.aweight, sa.astatus1, sa.astatus2, sa.aURL, sa.aintroduce, sa2.picurl
+    FROM Stray_Animals sa
+    JOIN Stray_Animals2 sa2 ON sa.asoo = sa2.asoo
+    WHERE sa.acenter = #{acenter} AND sa.akind = #{akind} AND sa.acate = #{acate}
+</select>
+
+
+
+<select id="getSADetail" resultType="StrayAnimalVO">
+    SELECT sa.asoo, sa.aname, sa.acenter, sa.aenter, sa.acate, sa.akind, sa.agender, sa.aage,
+           sa.aweight, sa.astatus1, sa.astatus2, sa.aURL, sa.aintroduce, sa2.picurl
+    FROM Stray_Animals sa
+    JOIN Stray_Animals2 sa2 ON sa.asoo = sa2.asoo
+    WHERE sa.asoo = #{asoo} 
+</select>
+</mapper>

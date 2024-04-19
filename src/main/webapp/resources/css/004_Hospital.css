@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+
+.topm_hospital{
+
+padding:10px 10px;
+margin:190px 60px 0px 60px;
+
+}
+
+.photo_hospital {
+    width: 80px;
+    height: 80px;
+    margin-right:20px;
+  
+}
+
+.photo_hospital2{
+	width: 260px;
+    height: 200px;
+     border-radius:20px;
+}
+
+.photo_hospital3{
+	width: 23px;
+    height: 23px;
+    margin-top:6px;
+}
+
+.title_hospital{
+	
+    font-size:60px;
+	font-weight:900;
+}
+
+.subtitle_hospital{
+	
+	margin-left:6px;
+	font-size:30px;
+	font-weight:900;
+	margin-top:10px;
+	
+}
+
+.text_hospital{
+	color:gray;
+	margin-top:10px;
+	margin-left:6px;
+	font-weight:bold;
+}
+
+.text2_hospital{
+	color:#6495ED;
+	margin-top:10px;
+	margin-left:6px;
+	
+}
+
+.box_hospital{
+  
+  margin-right:20px;
+  margin-left:20px;
+  width:90%;
+	
+}
+
+
+.box2_hospital{
+  
+
+  margin-left:6px;
+  border-radius:10px;
+  background-color:white;
+  border:2px solid gray;
+  color:gray;
+  padding:3px 10px;
+  font-weight:bold;
+  
+	
+}
+
+
+.title2_StoreList {
+    font-size:20px;
+	font-weight:900;
+}
+
+
+.titlephoto_StoreList {
+    width: 65px;
+    height: 65px;
+}
+
+
+.textalign__StoreList {
+	text-align: center;
+}
+
+
+
+.cardsize_StoreList{
+	width: 295px; 
+	height: 384px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin:0px 15px;
+	
+}
+
+.nav-pills .nav-link.active {
+        background-color: #FFCC33; /* 배경 색상을 개나리색으로 설정 */
+        color: #000000; /* 글자 색상을 검정색으로 설정 */
+         border-radius: 20px;
+         margin-top:60px;
+    }
+ .nav-pills .nav-link {
+        color: #000000; /* 글자 색상을 검정색으로 설정 */
+         border-radius: 20px;
+          margin-top:60px;
+    }    
+    
+
+
+
+a{
+	text-decoration:none;
+	color:black;
+	
+}
+
+.hr {
+    border-bottom: 10px solid gray; /* 아래쪽 선을 추가하여 두껍게 만듭니다. */
+    display: block; /* 브라우저에서 브라우저의 기본 스타일을 무시하도록 합니다. */
+    content: ""; /* 내용이 없는 가상 요소를 생성합니다. */
+    margin: 10px 0;
+    width:50%; /* 위아래 여백을 조절합니다. */
+}
+

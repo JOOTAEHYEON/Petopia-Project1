@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- db에 있는 사원명단 모두 출력해보기 -->
+
+<!-- 맵핑될 DAO 인터페이스의 Full name -->
+<!-- mybatis xml mapper가 안보이는 경우 기본 xml으로 생성해서 앞에 받은 내용 복붙 -->
+
+<!-- 맵필될 DAO 인터페이스의 Full name을 줌. (mapper interface) -->
+<mapper namespace="com.spring.main.service.dao.CartDAO">
+	<!-- 그리고 자바 interface에 선언된 ArrayList <SawonVO> getAllSawon(); 의 getAllSawon()을 
+		아래 id에 써야함 -->
+
+	<select id="purchase_list" resultType="CartVO">
+		SELECT
+		email,name,price,priceCnt,option3
+		FROM CART
+		WHERE email = #{email}
+	</select>
+
+
+	<insert id="cartInsert">
+		INSERT INTO CART
+		VALUES
+		(#{email},#{name},#{price},#{priceCnt},#{option3})
+	</insert>
+
+
+
+	<update id="cartUpdate">
+		UPDATE CART
+		SET priceCnt = #{priceCnt}
+		WHERE name =#{name} AND option3 = #{option3}
+	</update>
+
+
+
+	<select id="getCartItem" resultType="CartVO">
+		SELECT
+		email,name,price,priceCnt,option3
+		FROM CART
+	</select>
+
+	<delete id="cartDelete" >
+		DELETE
+		FROM CART
+	   <!--WHERE name=#{name} AND option3 = #{option3} -->
+	</delete>
+
+
+
+</mapper>

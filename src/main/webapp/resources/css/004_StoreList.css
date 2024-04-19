@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+
+
+.topm_StoreList{
+
+padding:10px 10px;
+margin:190px 60px 0px 60px;
+
+}
+.title_StoreList {
+    margin-bottom: 60px;
+    font-size:70px;
+	font-weight:900;
+}
+
+
+.title2_StoreList {
+    font-size:20px;
+	font-weight:900;
+}
+
+
+.titlephoto_StoreList {
+    width: 65px;
+    height: 65px;
+}
+
+
+.textalign__StoreList {
+	text-align: center;
+}
+
+
+
+.photo_StoreList {
+    width: 290px;
+    height: 260px;
+    margin-top:10px;
+}
+
+
+.cardsize_StoreList{
+	width: 295px; 
+	height: 384px;
+	padding-left: 2px;
+	padding-right: 5px;
+	margin:0px 15px;
+	
+}
+
+.nav-pills .nav-link.active {
+        background-color: #FFCC33; /* 배경 색상을 개나리색으로 설정 */
+        color: #000000; /* 글자 색상을 검정색으로 설정 */
+         border-radius: 20px;
+         margin-top:60px;
+    }
+ .nav-pills .nav-link {
+        color: #000000; /* 글자 색상을 검정색으로 설정 */
+         border-radius: 20px;
+          margin-top:60px;
+    }    
+    
+
+
+
+a{
+	text-decoration:none;
+	color:black;
+	
+}
+
+
+.good {
+    transition: transform 0.3s, box-shadow 0.3s; /* 애니메이션 속성 설정 */
+}
+
+.good:hover {
+    transform: scale(1.05); /* 호버 시 카드 크기 확대 */
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3); /* 그림자 효과 */
+}

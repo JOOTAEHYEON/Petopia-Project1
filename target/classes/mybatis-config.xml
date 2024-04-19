@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                         "http://mybatis.org/dtd/mybatis-3-config.dtd">
+             
+
+<configuration>
+
+  <settings>
+        <setting name="jdbcTypeForNull" value="NULL" />
+  </settings> 
+  
+  
+    <typeAliases>
+       
+        <typeAlias alias="StoreVO" type="com.spring.main.vo.StoreVO"/>
+         <typeAlias alias="HosListVO" type="com.spring.main.vo.HosListVO"/>
+         <typeAlias alias="userVO" type="com.spring.main.vo.UserVO"/>
+          <typeAlias alias="ConrimVO" type="com.spring.main.vo.ConrimVO"/>
+           <typeAlias alias="BookListVO" type="com.spring.main.vo.BookListVO"/>
+           <typeAlias alias="payVO" type="com.spring.main.vo.PayVO" />
+           <typeAlias alias="SalListVO" type="com.spring.main.vo.SalListVO" />
+           <typeAlias alias="HotListVO" type="com.spring.main.vo.HotListVO" />
+           <typeAlias alias="StrayAnimalVO" type="com.spring.main.vo.StrayAnimalVO" />
+           <typeAlias alias="TaxiVO" type="com.spring.main.vo.TaxiVO"/>
+           <typeAlias alias="cartVO"  type="com.spring.main.vo.CartVO" />
+           <typeAlias alias="AnimalCenterVO"  type="com.spring.main.vo.AnimalCenterVO" />
+           
+          
+          
+          
+         
+    </typeAliases>
+</configuration>

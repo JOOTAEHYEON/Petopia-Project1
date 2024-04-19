@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+.topm_Book {
+	margin: 200px 30px 80px 30px;
+}
+
+.Title_book {
+	display: flex;
+	justify-content: center;
+	margin: 25px 0px;
+	font-size:70px;
+	font-weight:900;
+}
+
+
+.photo_book{
+	width:50px;
+	height:50px;
+	border-radius:3px;
+}
+
+.photo_book2{
+	width:40px;
+	height:40px;
+	border-radius:3px;
+}
+
+a{
+text-decoration:none;	
+color:black;
+}
+
+a:hover{
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.table_book{
+  text-align:center;
+}
+
+
+ @media only screen and (max-width: 600px) {
+    table {
+      width: 70%; /* 전체 폭을 100%로 설정 */
+    }
+
+    table th,
+    table td {
+      font-size: 14px; /* 폰트 크기를 조절합니다. */
+      text-align: center; /* 셀의 텍스트 정렬을 가운데로 설정합니다. */
+    }
+  }

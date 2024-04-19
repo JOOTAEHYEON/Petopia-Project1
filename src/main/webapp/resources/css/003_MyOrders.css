@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+.topm_myorders {
+	margin: 200px 30px 80px 30px;
+}
+
+.Title_myorders{
+	display: flex;
+	justify-content: center;
+	margin: 25px 0px;
+	font-size:70px;
+	font-weight:900;
+}
+
+
+.photo_myorders{
+	width:50px;
+	height:50px;
+	border-radius:3px;
+}
+
+
+
+a{
+text-decoration:none;	
+color:black;
+}
+
+a:hover{
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.table_myorders{
+  text-align:center;
+}
+
+
+
+.table_myorders th:nth-child(3),
+.table_myorders td:nth-child(3) {
+    width: 350px; /* 원하는 가로 길이로 조정하세요 */
+    max-width: 450px; /* 최대 가로 길이로 설정 (넘어가면 줄임표시) */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+ @media only screen and (max-width: 600px) {
+    table {
+      width: 70%; /* 전체 폭을 100%로 설정 */
+    }
+
+    table th,
+    table td {
+      font-size: 14px; /* 폰트 크기를 조절합니다. */
+      text-align: center; /* 셀의 텍스트 정렬을 가운데로 설정합니다. */
+    }
+  }

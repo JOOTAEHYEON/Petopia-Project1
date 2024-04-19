@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+
+.display{
+	display: flex;
+	justify-content: center;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/* 셀렉트 영역 스타일 */
+.select{
+    position: relative;
+    padding: 5px 10px;
+    margin:20px;
+    width: 200px;
+     height:40px;
+    border-radius: 5px;
+    border:none;;
+    background-color: linen;
+    background-image: url("https://img.icons8.com/material-rounded/24/000000/expand-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    cursor: pointer;
+}
+
+/* 옵션 영역 스타일 */
+.select ul{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    border:1px solid #FFCC33;
+    border-radius: 5px;
+    background-color: #525252;
+    cursor: pointer;
+}
+
+.select ul li{
+    padding: 10px;
+    background:white;
+}
+
+ul {
+    padding-left: 0px;
+     list-style-type: none;
+}
+
+
+.select ul li:hover{
+    background-color: floralwhite;
+}
+
+/* 아이콘 스타일 */
+i{
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+i img{
+    width: 20px;
+}
+
+.upload {
+      width: 50px;
+      height: 50px;
+      border: 3px dotted gray;
+      cursor: pointer;
+      background: url('../pic/camera.png') no-repeat center center;
+      background-size: 80%;
+      margin-top:10px;
+    }
+    
+.real-upload {
+	display: none;
+}
+
+.image-preview {
+	margin-left:10px;
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+	
+}
+
+.image-preview img {
+    width: 80px; /* 원하는 너비 */
+    height: 80px; /* 너비에 따라 자동 조정됨 */
+}
+

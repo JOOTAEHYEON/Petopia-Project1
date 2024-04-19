@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.spring.main.service.dao.StoreDAO">
+
+		<select id="getAllStore" resultType="StoreVO">
+    	   	SELECT ProductID, Category, Name, Price
+   		 	FROM Store 
+   		 	WHERE Category LIKE '강아지%'
+		</select>
+		
+		<select id="getAllStoreCat" resultType="StoreVO">
+    		SELECT ProductID, Category, Name, Price
+   		 	FROM Store 
+   		 	WHERE Category LIKE '고양이%'
+		</select>
+		
+				
+		<select id="getAllDetail" resultType="StoreVO">
+    		SELECT productID, Category, Name, Price, ShippingFee, Seller, Option1, Option2
+   		 	FROM Store 
+   		 	WHERE ProductID =#{ProductID}
+		</select>
+		
+		 <select id="getAreaStore" resultType="StoreVO">
+             SELECT ProductID, Category, Name, Price
+             FROM Store 
+             WHERE name like '%' || #{area} || '%'
+      </select>
+	
+
+	
+	
+</mapper>

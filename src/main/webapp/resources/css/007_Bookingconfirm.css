@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+
+.margin2_Orderconfirm{
+	margin:5px 20px 20px 20px;
+	
+}
+
+.lastconfirmbox {
+    border: none; /* 테두리 없음 */
+    font-weight: bold; /* 볼드 처리 */
+    font-size: 17px; /* 글자 크기 17px */
+    height:30px;
+}
+
+.topm_Orderconfirm{
+	margin:200px 80px 140px 80px;
+	width:90%;
+	
+}
+
+
+.textmargin_Orderconfirm{
+	margin: 8px 20px 10px 2px;;
+	font-size:12px; 
+	color: gray;
+}
+
+
+
+
+.paytext_orderconfirm{
+  font-size:30px;
+  color:black;
+  font-weight:900;
+  height:200px;
+  margin:10px 10px 10px 10px;
+  
+}
+
+
+.paytext_orderconfirm::hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.paytext2_orderconfirm{
+	height:30px;
+	
+}
+
+.requestbox_Orderconfirm{
+	width:800px;
+	height:150px;
+}
+
+
+.title_Orderconfirm {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0px;
+	font-size:70px;
+	font-weight:900;
+	
+	
+	
+}
+
+.subtitle_Orderconfirm {
+	font-size:20px;
+	font-weight:800;
+	margin: 30px 20px 10px 2px;;
+	color:black;
+}
+
+
+.photo_Orderconfirm {
+	width:230px;
+	height:180px;
+	border-radius:13px;
+	margin: 20px 20px 10px 2px;;
+}
+.box_orderconfirm6 {
+    height: 50px;
+    width: 130px;
+    margin: 10px 0px 5px 10px;
+   
+    line-height: 50px; /* 세로 방향으로 가운데 정렬 */
+}
+
+.btn_orderconfirm{
+	height:50px;
+	margin: 10px 10px 5px 10px;
+}
+
+
+.box_orderconfirm5{
+	width:210px;
+	height: 50px;
+	margin: 10px 10px 5px 10px;
+	border: 1px solid ;
+	border-color: rgba(200, 200, 200, 0.7);
+	
+}
+
+
+.box_orderconfirm4{
+	width:43%;
+	
+}
+
+.box_orderconfirm3 {
+	width: 400px;
+	height: 50px;
+	margin: 1px 0px 5px 0px;
+	border: 1px solid;
+	border-color: rgba(200, 200, 200, 0.7);
+}
+
+
+.box_orderconfirm2 {
+	width: 300px;
+	height: 50px;
+	margin: 10px 0px 5px 10px;
+	border: 1px solid;
+	border-color: rgba(200, 200, 200, 0.7);
+}
+
+.box_orderconfirm {
+	width: 400px;
+	height: 50px;
+	margin: 10px 0px 5px 0px;
+	border: none;
+
+}
+
+
+.paybox_orderconfirm{
+	border:1px solid gray;
+	border-radius:6px;
+	margin:10px 10px 10px 10px;
+	
+}
+
+
+.hr {
+    border-bottom: 10px solid gray; /* 아래쪽 선을 추가하여 두껍게 만듭니다. */
+    display: block; /* 브라우저에서 브라우저의 기본 스타일을 무시하도록 합니다. */
+    content: ""; /* 내용이 없는 가상 요소를 생성합니다. */
+    margin: 10px 0;
+    width:50%; /* 위아래 여백을 조절합니다. */
+}
+
+
+
+ th {
+    width: 140px;
+  }
+
+
+
+.paybox{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+width:90%;
+border:1px solid gray;	
+border-radius:20px;
+padding:10px;
+margin:10px 50px 40px 50px;
+}
+	
+
+
+
+
+.gTitle{
+	margin-left:40px;
+	font-size:20px;
+	font-weight:500;
+	
+}
+
+.gTitle2{
+	
+	font-size:20px;
+	color:#008000;
+	font-weight:800;
+	
+}
+
+
+.side{
+	position: fixed;
+    top: 38%; /* 화면 중앙에서 시작 */
+    right: 10; /* 오른쪽에 고정 */
+    transform: translateY(-50%); /* 화면 중앙으로 정렬 */
+    background-color: #ffffff;
+    padding: 20px;
+   
+    z-index: 999; 
+}
+
+
+
+
+.gContents{
+	margin: 5px 40px;
+	font-size:16px;
+}
+
+.Treview{
+	text-decoration:none;
+	color:white;	
+}
+
+
+.Cobox{
+	margin: 10px 0px 50px 0px;
+}
+
+
+.imgbox{
+	width:150px;
+	height:150px;
+	border-radius: 20px;
+}
+
+.lastconfirmbox2 {
+    width: 100%; /* 입력 상자의 너비를 100%로 설정하여 부모 요소에 맞게 조정합니다. */
+    white-space: pre-wrap; /* 텍스트 줄 바꿈 허용 */
+    font-weight: bold; /* 볼드 처리 */
+    font-size: 17px; /* 글자 크기 17px */
+    border: none; /* 테두리 없음 */
+       border: none; /* 테두리 없음 */
+    font-weight: bold; /* 볼드 처리 */
+    font-size: 17px; /* 글자 크기 17px */
+    height:30px;
+}

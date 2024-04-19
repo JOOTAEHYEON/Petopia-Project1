@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵필될 DAO 인터페이스의 Full name을 줌. (mapper interface) -->
+<mapper namespace="com.spring.main.service.dao.SalListDAO">	
+	
+	<!-- 전체 미용살 리스트 -->
+	<select id="getSalAllList" resultType="com.spring.main.vo.SalListVO">
+		SELECT lssoo, lsname, lstime, lshuemoo, lsarea, lsaddress, lstel, lsxdo, lsydo,laddress2
+		FROM LSALON
+		ORDER BY lssoo
+	</select>
+	
+
+	<!-- 병원 상세 정보 -->
+	<select id="getSalListinfo" parameterType="string" resultType="com.spring.main.vo.SalListVO">
+    	SELECT lssoo, lsname, lstime, lshuemoo, lsarea, lsaddress, lstel,laddress2,lsxdo, lsydo
+    	FROM (
+        	SELECT lssoo, lsname, lstime, lshuemoo, lsarea, lsaddress, lstel,laddress2, lsxdo, lsydo,ROWNUM AS rnum 
+        	FROM LSALON
+        	WHERE lsname=#{lsname}
+    	)
+    	WHERE rnum = 1
+	</select>
+	
+	<select id="getSalAreaList" resultType="com.spring.main.vo.SalListVO">
+      SELECT lssoo, lsname, lstime, lshuemoo, lsarea, lsaddress, lstel, lsxdo, lsydo,laddress2
+      FROM LSALON
+      WHERE lsname like '%' || #{area} || '%'
+   </select>
+	
+</mapper>

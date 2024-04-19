@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵필될 DAO 인터페이스의 Full name을 줌. (mapper interface) -->
+<mapper namespace="com.spring.main.service.dao.BookListDAO">	
+	
+
+	
+	
+		 
+	<insert id="insertBookList">   
+    INSERT INTO BookingList
+	VALUES (#{rorder},#{email},#{rname},#{rsoo},#{rdate},#{rcate},#{rtel},#{rpet},#{rperson},#{raddress})    
+	</insert>
+
+	
+<!--예약내역찾기 -->
+	<select id="searchBookList" resultType="BookListVO">
+    SELECT email,rname, rsoo, rdate, rcate, rpet, rtel, rperson, raddress ,rorder
+    FROM BookingList
+    WHERE email = #{email}
+	</select>
+	
+	
+	<!-- 예약상세내역찾기 -->
+	<select id="getBookingDetail" resultType="BookListVO">
+    		SELECT email,rname, rsoo, rdate, rcate, rpet, rtel, rperson, raddress ,rorder
+   		 	 FROM BookingList
+   		 	WHERE rorder = #{rorder}
+		</select>
+
+
+<delete id="deleteBooking">
+		DELETE 
+		FROM BookingList
+		WHERE rorder = #{rorder}
+	</delete>
+
+	
+</mapper>

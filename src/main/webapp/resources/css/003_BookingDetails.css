@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SejonghospitalBold';
+    src: url('../fonts/ttf/Sejong hospital Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.topm_OrderDetails{
+	margin:200px 80px 140px 80px;
+	
+}
+
+
+.margin_OrderDetails{
+	margin:20px;	
+}
+
+.margin2_OrderDetails{
+	margin:5px 20px 20px 20px;
+	
+}
+
+
+.margin2_OrderDetails div {
+    margin-bottom: 10px; /* 적절한 간격 크기로 조절 */
+}
+
+
+.Title_orderDetails{
+	display: flex;
+	justify-content: center;
+	margin: 25px 0px;
+	font-size:70px;
+	font-weight:900;
+}
+
+
+.line_orderDetails{
+	 height: 5px;
+    width: 800px;
+    background-color: #CCCCCC; /* 연한회색(예시 색상) */
+    border: none; /* 테두리 없음 */
+	
+}
+
+.line2_orderDetails{
+	 height: 3px;
+    width: 100%;
+    background-color: #CCCCCC; /* 연한회색(예시 색상) */
+    border: none; /* 테두리 없음 */
+	
+}
+
+
+.line3_orderDetails {
+    height: 5px;
+    width: 800px;
+    border-style: dotted; /* 점선 스타일 적용 */
+    border-width: 0 0 0 0; /* 테두리 없음 */
+    background-color: #CCCCCC; /* 연한회색(예시 색상) */
+}
+
+
+
+.textcolor_orderDetails {
+color: gray;
+}
+
+.text_orderDetails{
+	font-size:25px;
+	font-weight:900;
+	margin: 3px 0px 12px 0px;
+	
+}
+
+.text2_orderDetails{
+	font-size:20px;
+	font-weight:800;
+	margin: 20px;
+	color:black;
+	
+}
+
+.box_OrderDetails{
+	width:800px;
+	border:1px solid lightgray;
+	border-radius:10px;
+	marign:10px 0px 180px 0px;
+}
+
+.box_OrderDetails2{
+	margin:10px 20px 10px 20px;
+	width:780px;	
+}
+
+
+
+
+
+.box_OrderDetails3{
+	
+	background-color: #FFCC33; /* 개나리색 */
+	border:none;
+	border-radius:15px;
+	height:32px;
+	color:black;
+	width:100px;
+}
+
+
+.box_OrderDetails3:hover {
+    background-color:lightgray;
+    color:white; /* 검정색 */
+    font-weight: bold;
+}
+
+
+.box_OrderDetails4{
+	width:760px;
+	border:1px solid lightgray;
+	border-radius:10px;
+	marign:10px 0px 180px 0px;
+}
+
+
+
+
+.photo_orderdetails{
+	width:180px;
+	height:180px;
+	border-radius:3px;
+}
+
+
+
+
+.Lobox {
+	width: 400px;
+	height: 50px;
+	background-color: #3CB371;
+	color: white;
+	border: none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+.lnfo2{
+	width:100%;
+	margin:200px 0px;
+	height:300px;
+}
+
+.conIMbox{
+	width:300px;
+	height:170px;
+	border-radius:12px;
+}
+

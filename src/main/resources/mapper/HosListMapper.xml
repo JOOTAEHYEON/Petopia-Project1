@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵필될 DAO 인터페이스의 Full name을 줌. (mapper interface) -->
+<mapper namespace="com.spring.main.service.dao.HosListDAO">	
+	
+	<!-- 전체 병원 리스트 -->
+	<select id="getHosAllList" resultType="com.spring.main.vo.HosListVO">
+		SELECT hsoo, hname, htime, hhuemoo, harea, haddress, htel,haddress2
+		FROM LHOSPITAL
+		<!-- CAST(hsoo AS UNSIGNED); -->
+	</select>
+	
+
+	<!-- 병원 상세 정보 -->
+	<select id="getHosListinfo" parameterType="string" resultType="com.spring.main.vo.HosListVO">
+    	SELECT hsoo, hname, htime, hhuemoo, harea, haddress, htel,haddress2, hxdo ,hydo
+    	FROM (
+        	SELECT hsoo, hname, htime, hhuemoo, harea, haddress, htel, haddress2,hxdo ,hydo ,ROWNUM AS rnum
+        	FROM LHOSPITAL
+        	WHERE hname=#{hname}
+    	)
+    	WHERE rnum = 1
+	</select>
+	
+  <select id="getHosAreaList" resultType="com.spring.main.vo.HosListVO">
+       SELECT hsoo, hname, htime, hhuemoo, harea, haddress, htel,haddress2
+      FROM LHOSPITAL
+       WHERE hname like '%' || #{area} || '%'
+   </select>
+	
+</mapper>

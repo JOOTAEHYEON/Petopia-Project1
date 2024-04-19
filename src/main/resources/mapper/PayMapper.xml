@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- db에 있는 사원명단 모두 출력해보기 -->
+
+<!-- 맵핑될 DAO 인터페이스의 Full name -->
+<!-- mybatis xml mapper가 안보이는 경우 기본 xml으로 생성해서 앞에 받은 내용 복붙 -->
+
+<!-- 맵필될 DAO 인터페이스의 Full name을 줌. (mapper interface) -->
+<mapper namespace="com.spring.main.service.dao.PayDAO">
+	<!-- 그리고 자바 interface에 선언된 ArrayList <SawonVO> getAllSawon(); 의 getAllSawon()을 
+		아래 id에 써야함 -->
+		
+		 <resultMap id="payResultMap" type="PayVO">
+        <result property="imp_uid" column="imp_uid"/>
+        <result property="merchant_uid" column="merchant_uid"/>
+        <result property="name" column="name"/>
+        <result property="buyer_name" column="buyer_name"/>
+        <result property="buyer_tel" column="buyer_tel"/>
+        <result property="buyer_addr" column="buyer_addr"/>
+        <result property="email" column="buyer_email"/>
+        <result property="amount" column="amount"/>
+        <result property="priceCnt" column="priceCnt"/>      
+        <result property="paydate" column="paydate"/>
+    </resultMap>
+    
+    <insert id="payInsert">
+        INSERT INTO PAY
+        VALUES (#{imp_uid},#{merchant_uid},#{name},#{buyer_name},#{buyer_tel},#{buyer_addr},#{buyer_email},
+        #{amount},#{priceCnt},#{point},#{option1},#{productID},#{paydate})
+    </insert>
+
+    <select id="paySearch" resultMap="payResultMap">
+        SELECT imp_uid, merchant_uid, name,buyer_name,buyer_tel,buyer_addr,buyer_email as email,amount,priceCnt,point,productID,paydate 
+        FROM PAY
+        WHERE buyer_email=#{buyer_email}
+    </select>
+
+    <select id="paySearchDetail" resultMap="payResultMap">
+        SELECT imp_uid, merchant_uid, name,buyer_name,buyer_tel,buyer_addr,buyer_email as email,amount,priceCnt,point,paydate,option1,productID
+        FROM PAY
+        WHERE merchant_uid=#{merchant_uid}
+    </select>
+
+    <delete id="payDelete">
+        DELETE 
+        FROM PAY
+        WHERE merchant_uid=#{merchant_uid}
+    </delete>
+
+
+</mapper>

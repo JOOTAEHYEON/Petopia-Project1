@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+
+/*===마진====================================================*/
+
+.box_login {
+	margin: 15px 0px 15px 0px;
+}
+
+.topm_login{
+	margin:200px 0px 300px 0px;
+}
+
+.mt10_login{
+margin-top:10px;
+}
+
+.topm_register {
+	margin: 130px 30px 80px 30px;
+}
+
+.topm_information {
+	margin: 200px 30px 80px 30px;
+}
+.custom-listbox {
+    margin: 45px 20px 20px 20px;
+}
+
+/*=================================================*//
+
+/* 간편 로그인 그림  */
+
+.button_snslogin {
+    width: 48px;
+    height: 48px;
+}
+
+.form-control {
+	height: 40px;
+	padding: 10px 50px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(- -bs-body-color);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-clip: padding-box;
+	border: var(- -bs-border-width) solid var(- -bs-border-color);
+	border-radius: 20px;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+  .contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 추가: 화면이 작아질 경우 이미지를 다음 줄로 이동 */
+  }
+
+
+
+.mid {
+	display: flex;
+	justify-content: center;
+	font-size:70px;
+	font-weight:900;
+}
+
+.Ltext {
+	width: 400px;
+	height: 40px;
+	margin: 10px 0px 5px 0px;
+	border: 1px solid;
+	border-color: rgba(200, 200, 200, 0.7);
+}
+
+.box_Login {
+	width: 400px;
+	height: 50px;
+	background-color: #FFCD00;
+	color: white;
+	border: none;
+	
+}
+
+.lnfo2{
+	width:100%;
+	margin:200px 0px;
+	height:300px;
+}
+
+
+.Title_register {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px 0px 0px;
+	font-size:80px;
+	font-weight:900;
+
+}
+
+.Title_information {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px 0px 0px;
+	font-size:80px;
+	font-weight:900;
+
+}
+
+.button_reigster {
+
+		width: 590px;
+	height: 50px;
+	background-color: black;
+	color: white;
+	border: none;
+	
+}
+
+
+.infobox3 {
+
+	width: 295px;
+	height: 50px;
+	background-color: lightgray;
+	color: black;
+	border: none;
+	
+}
+
+
+.infobox6 {
+
+	width: 295px;
+	height: 50px;
+	background-color: #FFCD00;
+	color: black;
+	border: none;
+	
+}
+
+
+
+.infobox4 {
+
+	width: 100px;
+	height: 30px;
+	background-color: lightgrey;
+	color: gray;
+	border: none;
+	margin-left:8px;
+	
+}
+.infobox2 {
+    width: 295px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center; /* 수평 가운데 정렬 */
+    line-height: 50px; /* 수직 가운데 정렬 */
+}
+
+.infoboxL{
+		display:relative;
+	right:100px;
+}
+
+.text3_register {
+	width: 400px;
+	height: 40px;
+	margin: 10px 0px 5px 0px;
+	border: 1px solid;
+	border-color: rgba(200, 200, 200, 0.7);
+}
+
+.text2_register{
+	width: 286.5px;
+	height: 40px;
+	margin: 10px 0px 5px 0px;
+	border: 1px solid;
+	border-color: rgba(200, 200, 200, 0.7);
+}
+
+
+.text_register{
+	height: 40px;
+	margin: 10px 0px 5px 0px;
+	border: none;
+	
+}
+
+
+.Ltr{
+	height:40px;
+}
+
+.listTitle{
+font-size:20px;
+font-weight:bold;	
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: var(--bs-list-group-bg);
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+    height:60px;
+    text-align:center;
+}
+
+
+table {
+	display: flex;
+	justify-content: center;
+	margin: 15px 0px 10px 0px;
+	padding:20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+hr {
+	border: none; /* 기본 테두리 제거 */ height : 2px; /* 두께 설정 */
+	background-color: black;
+	height: 2px; /* 두께 설정 */ background-color : black; /* 색상 설정 */
+	margin: 10px 0; /* 위아래 여백 설정 */
+}
+
+.subtitle_register{
+	width: 190px;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.text_register{
+	width: 190px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+
+.Ribox.Lobox:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input::placeholder {
+	color: rgba(200, 200, 200, 0.7);
+	font-size: 12px;
+}
+
+
+.R{
+	position:relative;
+	right:500px;
+}
+
+.deltext{
+	margin-top:40px;
+	text-align:right;
+	width:590px;
+}
+
+
+
+

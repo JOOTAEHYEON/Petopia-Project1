@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.spring.main.service.dao.BoardDAO">
+
+	    <!-- 게시판 리스트 -->
+		<select id="getAllBoard" resultType="com.spring.main.vo.BoardVO">
+    	   	SELECT *
+   		 	FROM LBOARD 
+   		</select>
+		 
+		 
+	   <!-- 게시글 상세조회 -->
+	   <select id="getBoardDetail" parameterType="int" resultType="com.spring.main.vo.BoardVO">
+			SELECT userid, bbsid, bbscategory, bbsdog, bbstitle, bbscontent, bbsdate, bbsavailable
+			FROM LBOARD
+			WHERE bbsid=#{bbsid}
+	   </select>
+	
+	<!-- 게시글 작성 -->
+    <insert id="insertBoard" parameterType="com.spring.main.vo.BoardVO">
+    	INSERT INTO LBOARD  
+    	(    
+       		bbsid,
+        	userid,
+        	bbscategory,
+       	 	bbsdog,
+       	 	bbstitle,
+        	bbscontent,
+        	bbsdate,
+        	bbsavailable
+    	)
+    	VALUES
+    	(
+        	LBOARD_SEQ.NEXTVAL,
+        	#{userid},
+        	#{bbscategory},
+        	#{bbsdog},
+        	#{bbstitle},
+        	#{bbscontent},
+        	#{bbsdate},
+        	#{bbsavailable}
+    	)
+	 </insert>
+   
+
+	<!-- 게시글 수정 -->
+	<update id="updateBoard" parameterType="com.spring.main.vo.BoardVO">
+    	UPDATE LBOARD
+    	SET bbscategory=#{bbscategory}, 
+    		bbstitle=#{bbstitle},
+        	bbscontent=#{bbscontent},
+       		bbsdate=#{bbsdate}
+    	WHERE bbsid=#{bbsid}
+    </update>
+	
+	
+	<!-- 게시글 삭제 -->
+	<delete id="deleteBoard">
+		DELETE 
+		FROM LBOARD
+		WHERE bbsid=#{bbsid}
+	</delete>
+	
+</mapper>

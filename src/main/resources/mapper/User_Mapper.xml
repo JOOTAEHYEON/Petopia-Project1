@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.spring.main.service.dao.UserDAO">
+ 
+    <select id="loginCheck" resultType="UserVO">
+        SELECT *
+        FROM userTable
+        WHERE email=#{email}
+    </select>
+ 
+      <insert id="userInsert">
+      INSERT INTO userTable
+      VALUES (#{email},#{password},#{tel},#{adp},#{ad},#{ad1})
+   </insert>
+   
+   <select id="userSelect" resultType="UserVO">
+      SELECT *
+      FROM userTable
+      WHERE email=#{email}
+   </select>
+
+   <update id="updateUser">
+      UPDATE userTable
+      SET
+      password=#{password},
+      tel=#{tel},
+      adp=#{adp},
+      ad=#{ad},
+      ad1=#{ad1}
+      WHERE email=#{email}
+   </update>
+
+   <delete id="deleteUser">
+      DELETE FROM userTable 
+      WHERE email=#{email}
+   </delete>
+ 
+ 
+
+    <select id="findEmail" resultType="String">
+      SELECT email
+      FROM userTable
+      WHERE tel=#{tel}
+   </select>
+
+
+    <update id="pwUpdate">
+        UPDATE userTable 
+        SET password=#{password} 
+        WHERE email=#{email}
+    </update>
+    
+
+<select id="loginCheck2" resultType="UserVO">
+        SELECT *
+        FROM userTable
+        WHERE email=#{email}
+    </select>
+ 
+ 
+ 
+ 
+<!--     <select id="getAllSawon" resultType="SawonVO">
+      SELECT id, name, tel
+      FROM teltable55
+   </select>
+   
+   <select id="getTelinfo" resultType="SawonVO">
+      SELECT id, name, tel
+      FROM teltable55
+      WHERE name=#{name}
+   </select> -->
+   
+
+ 
+
+</mapper>
