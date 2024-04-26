@@ -69,6 +69,34 @@ Mybatis , Java , JavaScript , HTML/CSS ,  jQuery , JSP, Ajax , Json , JSTL , XML
 목표: 고객이 구매할 상품을 장바구니에 담을 수 있으며 장바구니에 담긴 상품을 구매할 수 있습니다. <br>
 구현계획: 고객이 로그인 후 이메일을 통해 장바구니로 접근 가능하며, 상품 상세 페이지에서 옵션과 수량을 선택하여 장바구니에 상품을 담을 수 있습니다. 또한, 동일한 상품과 옵션을 장바구니에 담았을 때 수량만 증가 되도록 하였으며 DB에 CART 테이블에서 수량만 업데이트 되도록 하였습니다. 그리고 구매하기를 클릭하였을 때 구매 확인 페이지로 이동하며 상품 정보를 조회 할 수 있습니다.장바구니 페이지에서 삭제 버튼을 클릭 시 상품이 삭제가 되며 DB에 CART 테이블에서 상품이 삭제가 됩니다. <br>
 
+<h2>디자인</h2>
+
+[상품 상세 페이지]<br>
+
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/83258dc3-0981-4ad8-b617-9caee9b38bc3)
+
+[장바구니 페이지]<br>
+
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/2eafe566-7352-46ad-ae95-26ecedd712ee)
+
+[구매 확인 페이지]<br>
+
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/e43e11cc-8d4c-43f9-83dd-c44abe11b667)
+
+[상품구매]<br>
+
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/f25afbcf-4624-4577-a54a-d0ad0379eadf)
+
+[토스페이 간편결제]<br>
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/91bf670a-f6d4-4fe6-9f54-4804c8284c91)
+
+[카카오페이 간편결제]<br>
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/69570930-2564-4603-a538-3db96a2b0b83)
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/04b65770-5798-4b75-bb88-a5194ca45a06)
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/07b8a6d0-e717-40bf-97c2-8e5c76865246)
+
+
+
 
 <h2>프로젝트 시연영상</h2>
 - 프로젝트 동영상 링크 : https://youtu.be/IC2owr85Muw
