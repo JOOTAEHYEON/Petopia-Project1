@@ -35,7 +35,8 @@ Mybatis , Java , JavaScript , HTML/CSS ,  jQuery , JSP, Ajax , Json , JSTL , XML
 -사진 업로드, 게시글 작성, 댓글 기능을 통해 커뮤니티를 활성화합니다.<br>
 -수업 시작 전 회의를 통해 자신의 진도를 공유하고, 화면 설계서 및 기능 명세서를 통해 프로젝트 현황을 확인합니다.<br><br>
 
-프로젝트 진행 현황 체크
+프로젝트 진행 현황 체크<br>
+
 ![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/11ea9725-f6b6-4228-8e69-aec134ba02d4)
 
 <h2>개인목표</h2>
