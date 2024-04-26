@@ -95,6 +95,16 @@ Mybatis , Java , JavaScript , HTML/CSS ,  jQuery , JSP, Ajax , Json , JSTL , XML
 ![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/04b65770-5798-4b75-bb88-a5194ca45a06)
 ![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/07b8a6d0-e717-40bf-97c2-8e5c76865246)
 
+[주문 내역 페이지]<br>
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/6ca9c1f1-3829-4bc3-8727-b950d0655e7e)
+
+[구매 상세 내역 페이지]<br>
+
+![image](https://github.com/JOOTAEHYEON/Petopia-Project1/assets/161558492/e2bb1705-0f29-4ea6-9a1e-b5562211938d)
+
+
+
+
 
 
 
