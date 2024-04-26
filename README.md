@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=Petopia-Project%20%20&animation=twinkling&fontSize=50&fontAlignY=40&fontAlign=50&height=250)
+![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=Petopia%20%20&animation=twinkling&fontSize=50&fontAlignY=40&fontAlign=50&height=250)
 
 
 
